@@ -1,5 +1,5 @@
 FROM python:3.8-slim-bullseye
-ADD hb-ds-prod-key.json /hb-ds-prod-key.json
+ADD gcp-key.json /gcp-key.json
 
 RUN apt-get update && apt-get -y install sudo
 RUN apt-get install --reinstall -y build-essential
@@ -13,7 +13,7 @@ COPY ./pyproject.toml /{{cookiecutter.project_slug}}
 COPY ./poetry.lock /{{cookiecutter.project_slug}}
 COPY ./ds_app.py /{{cookiecutter.project_slug}}
 RUN mkdir /home/gcp_keys
-COPY hb-ds-prod-key.json /home/gcp_keys/hb-ds-prod-key.json
+COPY gcp-key.json /home/gcp_keys/gcp-key.json
 
 WORKDIR /{{cookiecutter.project_slug}}
 

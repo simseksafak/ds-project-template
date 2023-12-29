@@ -20,7 +20,7 @@ def read_master_data(config: dict, table_name: str, **kwargs):
     print(f"Retrieving Data From: {table_name} ")
     bq_ds = BigQueryOperations(gcp_key_path=config["gcp_key"])
     if not kwargs.get("query"):
-        QUERY_STRING = f"SELECT * FROM `hb-datascience-prod.{config['db_prefix']}.{table_name}`;"
+        QUERY_STRING = f"SELECT * FROM `{table_name}`;"
     else:
         QUERY_STRING = kwargs.get("query")
     data = bq_ds.execute_query(QUERY_STRING, return_type="dataframe")
