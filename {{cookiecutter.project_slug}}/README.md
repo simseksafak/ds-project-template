@@ -29,7 +29,7 @@
 1) Install cookiecutter.
    1) pip3 install cookiecutter
    2) brew install cookiecutter
-2) cookiecutter https://gitlab.hepsiburada.com/data-science/data_science_project_template
+2) cookiecutter <your_project_url>
 3) Make arrangments in pyproject.toml
 4) poetry install
 5) source .venv/bin/activate || poetry shell
