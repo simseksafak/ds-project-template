@@ -1,0 +1,38 @@
+dev:
+  env_identifier: "dev"
+  env_explanation: "DEVELOPMENT"
+  db_prefix: "{{cookiecutter.project_slug}}_dev"
+  gcp_key: "/home/gcp_keys/hb-ds-prod-key.json"
+  logger_name: "logger-{{cookiecutter.project_slug}}-dev"
+  elastic_index: "{{cookiecutter.project_slug}}_dev"
+  kafka_topic: "{{cookiecutter.project_slug}}_dev"
+  kafka_servers:
+    server1: X.X.X.X:9092
+    server2: X.X.X.X:9092
+    server3: X.X.X.X:9092
+
+qa:
+  env_identifier: "qa"
+  env_explanation: "QA"
+  db_prefix: "{{cookiecutter.project_slug}}_qa"
+  gcp_key: "/home/gcp_keys/hb-ds-prod-key.json"
+  logger_name: "logger-{{cookiecutter.project_slug}}-qa"
+  elastic_index: "{{cookiecutter.project_slug}}_qa"
+  kafka_topic: "{{cookiecutter.project_slug}}_qa"
+  kafka_servers:
+    server1: X.X.X.X:9092
+    server2: X.X.X.X:9092
+    server3: X.X.X.X:9092
+
+prod:
+  env_identifier: "prod"
+  env_explanation: "PRODUCTION"
+  db_prefix: "{{cookiecutter.project_slug}}_prod"
+  gcp_key: "/home/gcp_keys/hb-ds-prod-key.json"
+  logger_name: "logger-{{cookiecutter.project_slug}}-prod"
+  elastic_index: "{{cookiecutter.project_slug}}_prod"
+  kafka_topic: "{{cookiecutter.project_slug}}_prod"
+  kafka_servers:
+    server1: X.X.X.X:9092
+    server2: X.X.X.X:9092
+    server3: X.X.X.X:9092
