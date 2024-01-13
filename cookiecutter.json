@@ -1,7 +1,7 @@
 {
-    "full_name": "Fırat Öncü",
-    "email": "f.firatoncu@gmail.com",
-    "git_username": "firatoncu",
+    "full_name": "Ahmet Şafak Şimşek",
+    "email": "asafak36@gmail.com",
+    "git_username": "safaksimsek",
     "project_name": "Python Boilerplate",
     "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
     "project_short_description": "Python Boilerplate contains all the boilerplate you need to create a Data Science Project.",
